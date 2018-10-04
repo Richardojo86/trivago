@@ -1,0 +1,11 @@
+<h1>Guests#show</h1>
+<h2><%= @guest.name %></h2>
+<%@guest.reservations.each do |r| %>
+  <%= r.hotel.name %>
+  start_date <%= r.start_date %>
+  <br>
+  end_date <%= r.end_date %>
+
+<%  end %>
+
+<p>Find me in app/views/guests/show.html.erb</p>
